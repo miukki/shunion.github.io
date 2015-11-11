@@ -1,0 +1,90 @@
+
+@import
+        "variables",
+        "sticky_footer"
+;
+
+body {
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-brand {
+    .subtitle {
+        display:block;
+        font-size: ceil(($font-size-base * 0.60));
+        letter-spacing: 0.3px;
+    }
+
+}
+footer {
+  border-top: 1px solid $navbar-default-border;
+}
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+ @mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
+  background: white url($file-1x) no-repeat center center;
+  background-size: cover;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    background: white url($file-2x) no-repeat center center;
+  }
+}
+
+// Usage
+.jumbotron {
+  height: 200px;
+  overflow: hidden;
+  &.bg0 {
+    @include img-retina("../assets/imgs/bg0.jpg", "../assets/imgs/bg0.jpg", 100px, 100px);
+
+  }
+  &.bg1 {
+    @include img-retina("../assets/imgs/bg1.jpg", "../assets/imgs/bg1.jpg", 100px, 100px);
+
+  }
+  &.bg2 {
+    @include img-retina("../assets/imgs/bg2.jpg", "../assets/imgs/bg2.jpg", 100px, 100px);
+
+  }
+  &.bg3 {
+    @include img-retina("../assets/imgs/bg3.jpg", "../assets/imgs/bg3.jpg", 100px, 100px);
+
+  }
+}

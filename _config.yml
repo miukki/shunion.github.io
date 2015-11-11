@@ -1,0 +1,35 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: "星联（上海）化工产品贸易有限公司"
+subtitle: "SHANGHAI STAR UNION CHEMICALS IMPORT & EXPORT CO LTD"
+email: your-email@domain.com
+baseurl: "/shstarunion.github.io" # the subpath of your site, e.g. /blog
+url: "http://shstarunion.com" # the base hostname & protocol for your site
+permalink:     date
+paginate_path: /page:num
+timezone:      null
+home: "网站首页"
+qq: "1974518063"
+# Build settings
+markdown: kramdown
+
+sass:
+    style: compressed
+
+exclude: ['bower_components']
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      bg: [bg0]
+

@@ -1,0 +1,16 @@
+---
+layout: default
+bg: [bg0]
+---
+  <br>
+  <h4>公司及行业动态</h4>
+
+  <div>
+    {% for post in site.posts %}
+      <dl>
+        <dt class="small">{{ post.date | date: "%b %-d, %Y" }}</dt>
+        <dd><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></dd>
+      </dl>
+    {% endfor %}
+  </div>
+

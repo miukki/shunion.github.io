@@ -1,0 +1,53 @@
+<footer>
+  <br>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8">
+
+        <div class="clearfix">
+
+              <div class="pull-left">
+                <ul class="list-unstyled">
+                  <li class="small">{{ site.title }}</li>
+                  {% if site.qq %}
+                    <li class="small">qq: {{ site.qq }}</li>
+                  {% endif %}
+
+                </ul>
+              </div>
+
+
+              <div class="pull-left">
+                <ul class="list-unstyled">
+                  {% if site.github_username %}
+                  <li>
+                    {% include icon-github.html username=site.github_username %}
+                  </li>
+                  {% endif %}
+
+                  {% if site.twitter_username %}
+                  <li>
+                    {% include icon-twitter.html username=site.twitter_username %}
+                  </li>
+                  {% endif %}
+                </ul>
+              </div>
+
+              <div class="pull-right">
+                {% if site.description %}
+                  <p class="small">{{ site.description }}</p>
+                {% endif %}
+                <p class="rss-subscribe small text-right">subscribe news <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+              </div>
+
+
+      </div>
+
+
+      </div>
+    </div>
+
+
+  </div>
+</footer>
