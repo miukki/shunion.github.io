@@ -22,7 +22,7 @@ markdown: kramdown
 sass:
     style: compressed
 
-exclude: ['bower_components', 'bootstrap']
+exclude: ['bower_components', 'bootstrap', 'css/bootstrap.scss']
 
 defaults:
   -
