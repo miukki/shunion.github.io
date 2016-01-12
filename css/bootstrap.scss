@@ -10,8 +10,6 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
-please run
-ln -s ./bower_components/bootstrap-sass/assets/stylesheets/bootstrap ./bootstrap
 
 here is only core files located
 */
@@ -19,30 +17,30 @@ here is only core files located
 
 // Core variables and mixins
 @import "variables";
-@import "../bootstrap/mixins";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 // Reset and dependencies
-@import "../bootstrap/normalize";
-//@import "../bootstrap/print";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+//@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/print";
 @import "glyphicons";
 
 // Core CSS
-@import "../bootstrap/scaffolding";
-@import "../bootstrap/type";
-@import "../bootstrap/code";
-@import "../bootstrap/grid";
-@import "../bootstrap/tables";
-@import "../bootstrap/forms";
-@import "../bootstrap/buttons";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
 // Components
-@import "../bootstrap/component-animations";
-@import "../bootstrap/dropdowns";
-@import "../bootstrap/navs";
-@import "../bootstrap/navbar";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 
 // Components w/ JavaScript
 
 // Utility classes
-@import "../bootstrap/utilities";
-@import "../bootstrap/responsive-utilities";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../bootstrap/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";

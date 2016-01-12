@@ -9,7 +9,7 @@
 title: "星联（上海）化工产品贸易有限公司"
 subtitle: "SHANGHAI STAR UNION CHEMICALS IMPORT & EXPORT CO LTD"
 email: your-email@domain.com
-baseurl: "/shstarunion.github.io" # the subpath of your site, e.g. /blog
+baseurl: "/shunion.github.io" # the subpath of your site, e.g. /blog
 url: "http://shstarunion.com" # the base hostname & protocol for your site
 permalink:     date
 paginate_path: /page:num
@@ -22,7 +22,7 @@ markdown: kramdown
 sass:
     style: compressed
 
-exclude: ['bower_components']
+exclude: ['bower_components', 'bootstrap']
 
 defaults:
   -
